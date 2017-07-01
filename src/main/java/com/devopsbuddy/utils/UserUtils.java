@@ -5,12 +5,12 @@ import com.devopsbuddy.backend.persistence.domain.backend.User;
 /**
  * Created by Syrius on 7/1/2017.
  */
-public class UsersUtils {
+public class UserUtils {
 
     /**
      * Non instantiable.
      */
-    private UsersUtils() { throw new AssertionError("Non instantiable"); }
+    private UserUtils() { throw new AssertionError("Non instantiable"); }
 
     /**
      * Creates a user with basic attributes set.
