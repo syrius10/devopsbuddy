@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="028a23b1-8475-4f46-adbe-0eb1fbfbc825" name="Default" comment="Added files to .gitignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/converters/LocalDateTimeAttributeConverter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/PasswordResetToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/PasswordResetTokenRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/AbstractIntegrationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenIntegrationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/RepositoriesIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserIntegrationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/PasswordResetTokenService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/AbstractServiceIntegrationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenServiceIntegrationTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserRepositoryIntegrationTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java" />
     </list>
     <ignored path="devopsbuddy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+            <state relative-caret-position="275">
+              <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,35 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1813#1814#0" expanded="true" />
-                <element signature="e#1855#1856#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PasswordResetTokenRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/PasswordResetTokenRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+            <state relative-caret-position="49">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractIntegrationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/AbstractIntegrationTest.java">
+      <file leaf-file-name="UserRepositoryIntegrationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserRepositoryIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="62" column="99" selection-start-line="62" selection-start-column="99" selection-end-line="62" selection-end-column="99" />
+            <state relative-caret-position="355">
+              <caret line="113" column="61" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,77 +68,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PasswordResetTokenIntegrationTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenIntegrationTest.java">
+      <file leaf-file-name="PasswordResetTokenService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/PasswordResetTokenService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="60" column="87" selection-start-line="60" selection-start-column="87" selection-end-line="60" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractServiceIntegrationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/AbstractServiceIntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceIntegrationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PasswordResetTokenServiceIntegrationTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenServiceIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
-              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserIntegrationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserIntegrationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1204">
-              <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="75" column="49" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PasswordResetToken.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/PasswordResetToken.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="20" column="88" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2445#2446#0" expanded="true" />
-                <element signature="e#2470#2471#0" expanded="true" />
-                <element signature="e#2504#2505#0" expanded="true" />
-                <element signature="e#2532#2533#0" expanded="true" />
-                <element signature="e#2564#2565#0" expanded="true" />
-                <element signature="e#2592#2593#0" expanded="true" />
-                <element signature="e#2634#2635#0" expanded="true" />
-                <element signature="e#2668#2669#0" expanded="true" />
-                <element signature="e#2697#2698#0" expanded="true" />
-                <element signature="e#2724#2725#0" expanded="true" />
-                <element signature="e#2762#2763#0" expanded="true" />
-                <element signature="e#2794#2795#0" expanded="true" />
-                <element signature="e#2838#2839#0" expanded="true" />
-                <element signature="e#2871#2872#0" expanded="true" />
-                <element signature="e#2930#2931#0" expanded="true" />
-                <element signature="e#2974#2975#0" expanded="true" />
-                <element signature="e#3270#3271#0" expanded="true" />
-                <element signature="e#3317#3318#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocalDateTimeAttributeConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/converters/LocalDateTimeAttributeConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,13 +173,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Authority.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserSecurityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/utils/UserUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/RepositoriesIntegrationTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/DevopsbuddyApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/converters/LocalDateTimeAttributeConverter.java" />
@@ -246,6 +187,13 @@
         <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/AbstractIntegrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/PasswordResetTokenService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/AbstractServiceIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenServiceIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserRepositoryIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -887,6 +835,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -901,32 +850,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.com.devopsbuddy.test.integration in devopsbuddy">
-    <configuration default="false" name="UserIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.devopsbuddy.test.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="devopsbuddy" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.devopsbuddy.test.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.devopsbuddy.test.integration.UserIntegrationTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="UserServiceIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -979,7 +902,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PasswordResetTokenIntegrationTest.testDeleteToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="PasswordResetTokenIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.devopsbuddy.test.integration.*" />
@@ -991,7 +914,33 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.devopsbuddy.test.integration" />
       <option name="MAIN_CLASS_NAME" value="com.devopsbuddy.test.integration.PasswordResetTokenIntegrationTest" />
-      <option name="METHOD_NAME" value="testDeleteToken" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UserServiceIntegrationTest.testCreateNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.devopsbuddy.test.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="devopsbuddy" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.devopsbuddy.test.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.devopsbuddy.test.integration.UserServiceIntegrationTest" />
+      <option name="METHOD_NAME" value="testCreateNewUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1005,7 +954,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PasswordResetTokenIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UserRepositoryIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.devopsbuddy.test.integration.*" />
@@ -1016,7 +965,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.devopsbuddy.test.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.devopsbuddy.test.integration.PasswordResetTokenIntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.devopsbuddy.test.integration.UserRepositoryIntegrationTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1512,19 +1461,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.DevopsbuddyApplication" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UserIntegrationTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceIntegrationTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.com.devopsbuddy.test.integration in devopsbuddy" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PasswordResetTokenIntegrationTest.testDeleteToken" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PasswordResetTokenIntegrationTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.UserServiceIntegrationTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.com.devopsbuddy.test.integration in devopsbuddy" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.PasswordResetTokenIntegrationTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserServiceIntegrationTest.testCreateNewUser" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.UserRepositoryIntegrationTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.com.devopsbuddy.test.integration in devopsbuddy" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PasswordResetTokenIntegrationTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PasswordResetTokenIntegrationTest.testDeleteToken" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserIntegrationTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UserServiceIntegrationTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.UserRepositoryIntegrationTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserServiceIntegrationTest.testCreateNewUser" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserServiceIntegrationTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.PasswordResetTokenIntegrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1550,7 +1499,7 @@
       <workItem from="1497831357584" duration="3632000" />
       <workItem from="1497869991494" duration="22000" />
       <workItem from="1498513388433" duration="5589000" />
-      <workItem from="1498683820555" duration="44759000" />
+      <workItem from="1498683820555" duration="50280000" />
     </task>
     <task id="LOCAL-00001" summary="Added files to .gitignore">
       <created>1496184698119</created>
@@ -1579,17 +1528,14 @@
     <history-entry file="UserIntegrationTest - 2017.07.04 at 22h 08m 48s.xml">
       <configuration name="UserIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_devopsbuddy_test_integration_in_devopsbuddy - 2017.07.01 at 21h 07m 13s.xml">
-      <configuration name="com.devopsbuddy.test.integration in devopsbuddy" configurationId="JUnit" />
+    <history-entry file="UserRepositoryIntegrationTest - 2017.07.05 at 00h 41m 15s.xml">
+      <configuration name="UserRepositoryIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_devopsbuddy_test_integration_in_devopsbuddy - 2017.07.01 at 22h 32m 38s.xml">
-      <configuration name="com.devopsbuddy.test.integration in devopsbuddy" configurationId="JUnit" />
+    <history-entry file="UserServiceIntegrationTest - 2017.07.04 at 23h 36m 36s.xml">
+      <configuration name="UserServiceIntegrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_devopsbuddy_test_integration_in_devopsbuddy - 2017.07.01 at 22h 44m 27s.xml">
-      <configuration name="com.devopsbuddy.test.integration in devopsbuddy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_devopsbuddy_test_integration_in_devopsbuddy - 2017.07.04 at 17h 59m 17s.xml">
-      <configuration name="com.devopsbuddy.test.integration in devopsbuddy" configurationId="JUnit" />
+    <history-entry file="UserServiceIntegrationTest_testCreateNewUser - 2017.07.04 at 23h 43m 39s.xml">
+      <configuration name="UserServiceIntegrationTest.testCreateNewUser" configurationId="JUnit" />
     </history-entry>
     <history-entry file="com_devopsbuddy_test_integration_in_devopsbuddy - 2017.07.04 at 21h 47m 33s.xml">
       <configuration name="com.devopsbuddy.test.integration in devopsbuddy" configurationId="JUnit" />
@@ -1600,13 +1546,16 @@
     <history-entry file="com_devopsbuddy_test_integration_in_devopsbuddy - 2017.07.04 at 22h 54m 24s.xml">
       <configuration name="com.devopsbuddy.test.integration in devopsbuddy" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="com_devopsbuddy_test_integration_in_devopsbuddy - 2017.07.05 at 00h 48m 38s.xml">
+      <configuration name="com.devopsbuddy.test.integration in devopsbuddy" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67107000" />
+    <option name="totallyTimeSpent" value="72628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1662,23 +1611,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="39" column="61" selection-start-line="39" selection-start-column="61" selection-end-line="39" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/HelloWorldController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/HelloWorldController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/styles.css">
@@ -1970,16 +1902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -2009,16 +1931,6 @@
         <state relative-caret-position="217">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="41" column="66" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2088,40 +2000,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="39" column="42" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1855#1856#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/PasswordResetTokenRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+        <state relative-caret-position="287">
+          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2138,20 +2020,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserIntegrationTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/PasswordResetTokenRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
-          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenIntegrationTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/domain/backend/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="68" column="29" selection-start-line="68" selection-start-column="29" selection-end-line="68" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1813#1814#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserServiceIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/PasswordResetTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="60" column="87" selection-start-line="60" selection-start-column="87" selection-end-line="60" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/AbstractServiceIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/PasswordResetTokenServiceIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/persistence/repositories/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/devopsbuddy/test/integration/UserRepositoryIntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="113" column="61" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="38" column="81" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
