@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="028a23b1-8475-4f46-adbe-0eb1fbfbc825" name="Default" comment="Added files to .gitignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/forgotmypassword/changePassword.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/formValidation.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/formValidation.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/SecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/ForgotMyPasswordController.java" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/ForgotMyPasswordController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/copy/about.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/copy/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/common/header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/common/header.html" />
     </list>
     <ignored path="devopsbuddy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,35 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="70" column="13" selection-start-line="67" selection-start-column="4" selection-end-line="74" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ForgotMyPasswordController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/ForgotMyPasswordController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="38" column="75" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
               <folding>
-                <element signature="e#2664#2665#0" expanded="true" />
-                <element signature="e#2710#2711#0" expanded="true" />
+                <marker date="1499382504846" expanded="false" signature="49:1342" ph="..." />
+                <marker date="1499382504846" expanded="true" signature="2663:2674" ph=" { " />
+                <marker date="1499382504846" expanded="true" signature="2705:2711" ph=" }" />
+                <marker date="1499382504846" expanded="true" signature="2991:4136" ph="{...}" />
+                <marker date="1499382504846" expanded="true" signature="4473:6568" ph="{...}" />
+                <marker date="1499382504846" expanded="true" signature="6874:8086" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/copy/about.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -83,15 +66,46 @@
                 <element signature="e#5329#5335#0" expanded="true" />
                 <element signature="e#5357#5365#0" expanded="true" />
                 <element signature="e#5390#5398#0" expanded="true" />
+                <marker date="1499383977576" expanded="true" signature="198:271" ph="..." />
                 <marker date="1499383977576" expanded="true" signature="547:559" ph="Who we are" />
                 <marker date="1499383977576" expanded="true" signature="615:626" ph="We are a community of DevOps engineers who has the goal of helping organisations deliver business value faster, through technology, while having fun" />
+                <marker date="1499383977576" expanded="true" signature="731:813" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="941:5453" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="1026:3450" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="1067:1810" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="1132:1391" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="1177:1370" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="1541:1791" ph="..." />
                 <marker date="1499383977576" expanded="true" signature="1607:1630" ph="I am an experienced leader in delivering Quality Software @ Speed. My main areas of expertise cover DevOps, Agile and Lean transformations, testing automation, technology leadership and continuous deployment. Professional Scrum Master Level I, a certified AWS Solution Architect, committed to deliver business value through technical excellence. I am comfortable in all aspects of IT methodology leadership, from Agile to Lean, to more pre-emptive methodologies such as UP and Waterfall. I have got a long proven track of turning difficult projects  into success stories and in re-gaining business trust in difficult situations." />
                 <marker date="1499383977576" expanded="true" signature="1735:1758" ph="View details &gt;&gt;" />
+                <marker date="1499383977576" expanded="true" signature="1870:2613" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="1935:2194" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="1980:2173" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="2344:2594" ph="..." />
                 <marker date="1499383977576" expanded="true" signature="2410:2433" ph="I am an experienced leader in delivering Quality Software @ Speed. My main areas of expertise cover DevOps, Agile and Lean transformations, testing automation, technology leadership and continuous deployment. Professional Scrum Master Level I, a certified AWS Solution Architect, committed to deliver business value through technical excellence. I am comfortable in all aspects of IT methodology leadership, from Agile to Lean, to more pre-emptive methodologies such as UP and Waterfall. I have got a long proven track of turning difficult projects  into success stories and in re-gaining business trust in difficult situations." />
                 <marker date="1499383977576" expanded="true" signature="2538:2561" ph="View details &gt;&gt;" />
+                <marker date="1499383977576" expanded="true" signature="2673:3416" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="2738:2997" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="2783:2976" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="3147:3397" ph="..." />
                 <marker date="1499383977576" expanded="true" signature="3213:3236" ph="I am an experienced leader in delivering Quality Software @ Speed. My main areas of expertise cover DevOps, Agile and Lean transformations, testing automation, technology leadership and continuous deployment. Professional Scrum Master Level I, a certified AWS Solution Architect, committed to deliver business value through technical excellence. I am comfortable in all aspects of IT methodology leadership, from Agile to Lean, to more pre-emptive methodologies such as UP and Waterfall. I have got a long proven track of turning difficult projects  into success stories and in re-gaining business trust in difficult situations." />
                 <marker date="1499383977576" expanded="true" signature="3341:3364" ph="View details &gt;&gt;" />
+                <marker date="1499383977576" expanded="true" signature="3832:4057" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="4396:4621" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="4948:5173" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="5312:5441" ph="..." />
+                <marker date="1499383977576" expanded="true" signature="5480:5558" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,17 +115,64 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding>
+                <marker date="1499383602088" expanded="true" signature="383:434" ph="{...}" />
+                <marker date="1499383602088" expanded="true" signature="832:859" ph="{...}" />
+                <marker date="1499383602088" expanded="true" signature="874:902" ph="{...}" />
+                <marker date="1499383602088" expanded="true" signature="1083:1146" ph="{...}" />
+                <marker date="1499383602088" expanded="true" signature="1623:1650" ph="{...}" />
+                <marker date="1499383602088" expanded="true" signature="1766:1858" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="devopsbuddy.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="devopsbuddy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js">
+      <file leaf-file-name="bootstrap.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formValidation.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/formValidation.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contact/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-218">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1498438116660" expanded="true" signature="409:424" ph="We value your feedback" />
+                <marker date="1498438116660" expanded="true" signature="483:497" ph="Please let us know what you think" />
+                <marker date="1498438116660" expanded="true" signature="864:874" ph="Email" />
+                <marker date="1498438116660" expanded="true" signature="1144:1158" ph="First Name" />
+                <marker date="1498438116660" expanded="true" signature="1434:1447" ph="Last Name" />
+                <marker date="1498438116660" expanded="true" signature="1721:1747" ph="Your Feedback" />
+                <marker date="1498438116660" expanded="true" signature="2036:2047" ph="Submit" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -122,9 +183,17 @@
             <state relative-caret-position="-180">
               <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
               <folding>
+                <marker date="1499383060952" expanded="true" signature="327:1238" ph="..." />
+                <marker date="1499383060952" expanded="true" signature="386:1227" ph="..." />
+                <marker date="1499383060952" expanded="true" signature="429:1212" ph="..." />
+                <marker date="1499383060952" expanded="true" signature="545:822" ph="..." />
+                <marker date="1499383060952" expanded="true" signature="642:730" ph="..." />
                 <marker date="1499383060952" expanded="true" signature="766:795" ph="Your password has been successfully set" />
+                <marker date="1499383060952" expanded="true" signature="938:1193" ph="..." />
+                <marker date="1499383060952" expanded="true" signature="1035:1123" ph="..." />
                 <marker date="1499383060952" expanded="true" signature="1381:1416" ph="Please fill in the form below" />
                 <marker date="1499383060952" expanded="true" signature="1476:1496" ph="Enter your new password" />
+                <marker date="1499383060952" expanded="true" signature="1828:2045" ph="..." />
                 <marker date="1499383060952" expanded="true" signature="1887:1906" ph="Password" />
                 <marker date="1499383060952" expanded="true" signature="2156:2184" ph="Confirm Password" />
               </folding>
@@ -160,8 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/AbstractEmailService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/MockEmailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/SmtpEmailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/ProductionConfig.java" />
@@ -211,6 +278,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/copy/about.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/common/header.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js" />
       </list>
     </option>
   </component>
@@ -1171,11 +1240,11 @@
       <recent name="com.devopsbuddy.backend.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\devopsbuddy\src\main\resources\static\js" />
+      <recent name="C:\Projects\devopsbuddy\src\main\resources\static\css" />
       <recent name="C:\Projects\devopsbuddy\src\main\resources\templates\forgotmypassword" />
       <recent name="C:\Projects\devopsbuddy\src\main\resources\templates\payload" />
       <recent name="C:\Projects\devopsbuddy\src\main\resources\templates\user" />
-      <recent name="C:\Projects\devopsbuddy\src\main\resources\templates\contact" />
-      <recent name="C:\Projects\devopsbuddy\src\main\resources\uml" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.devopsbuddy.enums" />
@@ -1827,7 +1896,7 @@
       <workItem from="1497869991494" duration="22000" />
       <workItem from="1498513388433" duration="5589000" />
       <workItem from="1498683820555" duration="50449000" />
-      <workItem from="1499280155464" duration="17900000" />
+      <workItem from="1499280155464" duration="24540000" />
     </task>
     <task id="LOCAL-00001" summary="Added files to .gitignore">
       <created>1496184698119</created>
@@ -1879,7 +1948,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90697000" />
+    <option name="totallyTimeSpent" value="97337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
@@ -1942,51 +2011,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/MockEmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/ContactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/SmtpEmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/ProductionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#612#613#0" expanded="false" />
-            <element signature="e#657#658#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -2359,7 +2383,7 @@
         <state relative-caret-position="338">
           <caret line="57" column="64" selection-start-line="57" selection-start-column="64" selection-end-line="57" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2386,7 +2410,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="70" column="13" selection-start-line="67" selection-start-column="4" selection-end-line="74" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2394,7 +2420,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1499382504776" expanded="true" signature="925:968" ph="/**...*/" />
+            <marker date="1499382504776" expanded="true" signature="969:1002" ph="@{...}" />
+            <marker date="1499382504776" expanded="true" signature="1344:1432" ph="{...}" />
+            <marker date="1499382504776" expanded="true" signature="1948:2553" ph="{...}" />
+            <marker date="1499382504776" expanded="true" signature="2654:2784" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2403,8 +2436,12 @@
         <state relative-caret-position="221">
           <caret line="38" column="75" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
           <folding>
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2710#2711#0" expanded="true" />
+            <marker date="1499382504846" expanded="false" signature="49:1342" ph="..." />
+            <marker date="1499382504846" expanded="true" signature="2663:2674" ph=" { " />
+            <marker date="1499382504846" expanded="true" signature="2705:2711" ph=" }" />
+            <marker date="1499382504846" expanded="true" signature="2991:4136" ph="{...}" />
+            <marker date="1499382504846" expanded="true" signature="4473:6568" ph="{...}" />
+            <marker date="1499382504846" expanded="true" signature="6874:8086" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -2414,9 +2451,17 @@
         <state relative-caret-position="-180">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding>
+            <marker date="1499383060952" expanded="true" signature="327:1238" ph="..." />
+            <marker date="1499383060952" expanded="true" signature="386:1227" ph="..." />
+            <marker date="1499383060952" expanded="true" signature="429:1212" ph="..." />
+            <marker date="1499383060952" expanded="true" signature="545:822" ph="..." />
+            <marker date="1499383060952" expanded="true" signature="642:730" ph="..." />
             <marker date="1499383060952" expanded="true" signature="766:795" ph="Your password has been successfully set" />
+            <marker date="1499383060952" expanded="true" signature="938:1193" ph="..." />
+            <marker date="1499383060952" expanded="true" signature="1035:1123" ph="..." />
             <marker date="1499383060952" expanded="true" signature="1381:1416" ph="Please fill in the form below" />
             <marker date="1499383060952" expanded="true" signature="1476:1496" ph="Enter your new password" />
+            <marker date="1499383060952" expanded="true" signature="1828:2045" ph="..." />
             <marker date="1499383060952" expanded="true" signature="1887:1906" ph="Password" />
             <marker date="1499383060952" expanded="true" signature="2156:2184" ph="Confirm Password" />
           </folding>
@@ -2435,11 +2480,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
+          <folding>
+            <marker date="1499383602088" expanded="true" signature="383:434" ph="{...}" />
+            <marker date="1499383602088" expanded="true" signature="832:859" ph="{...}" />
+            <marker date="1499383602088" expanded="true" signature="874:902" ph="{...}" />
+            <marker date="1499383602088" expanded="true" signature="1083:1146" ph="{...}" />
+            <marker date="1499383602088" expanded="true" signature="1623:1650" ph="{...}" />
+            <marker date="1499383602088" expanded="true" signature="1766:1858" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/formValidation.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2455,15 +2507,86 @@
             <element signature="e#5329#5335#0" expanded="true" />
             <element signature="e#5357#5365#0" expanded="true" />
             <element signature="e#5390#5398#0" expanded="true" />
+            <marker date="1499383977576" expanded="true" signature="198:271" ph="..." />
             <marker date="1499383977576" expanded="true" signature="547:559" ph="Who we are" />
             <marker date="1499383977576" expanded="true" signature="615:626" ph="We are a community of DevOps engineers who has the goal of helping organisations deliver business value faster, through technology, while having fun" />
+            <marker date="1499383977576" expanded="true" signature="731:813" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="941:5453" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="1026:3450" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="1067:1810" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="1132:1391" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="1177:1370" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="1541:1791" ph="..." />
             <marker date="1499383977576" expanded="true" signature="1607:1630" ph="I am an experienced leader in delivering Quality Software @ Speed. My main areas of expertise cover DevOps, Agile and Lean transformations, testing automation, technology leadership and continuous deployment. Professional Scrum Master Level I, a certified AWS Solution Architect, committed to deliver business value through technical excellence. I am comfortable in all aspects of IT methodology leadership, from Agile to Lean, to more pre-emptive methodologies such as UP and Waterfall. I have got a long proven track of turning difficult projects  into success stories and in re-gaining business trust in difficult situations." />
             <marker date="1499383977576" expanded="true" signature="1735:1758" ph="View details &gt;&gt;" />
+            <marker date="1499383977576" expanded="true" signature="1870:2613" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="1935:2194" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="1980:2173" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="2344:2594" ph="..." />
             <marker date="1499383977576" expanded="true" signature="2410:2433" ph="I am an experienced leader in delivering Quality Software @ Speed. My main areas of expertise cover DevOps, Agile and Lean transformations, testing automation, technology leadership and continuous deployment. Professional Scrum Master Level I, a certified AWS Solution Architect, committed to deliver business value through technical excellence. I am comfortable in all aspects of IT methodology leadership, from Agile to Lean, to more pre-emptive methodologies such as UP and Waterfall. I have got a long proven track of turning difficult projects  into success stories and in re-gaining business trust in difficult situations." />
             <marker date="1499383977576" expanded="true" signature="2538:2561" ph="View details &gt;&gt;" />
+            <marker date="1499383977576" expanded="true" signature="2673:3416" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="2738:2997" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="2783:2976" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="3147:3397" ph="..." />
             <marker date="1499383977576" expanded="true" signature="3213:3236" ph="I am an experienced leader in delivering Quality Software @ Speed. My main areas of expertise cover DevOps, Agile and Lean transformations, testing automation, technology leadership and continuous deployment. Professional Scrum Master Level I, a certified AWS Solution Architect, committed to deliver business value through technical excellence. I am comfortable in all aspects of IT methodology leadership, from Agile to Lean, to more pre-emptive methodologies such as UP and Waterfall. I have got a long proven track of turning difficult projects  into success stories and in re-gaining business trust in difficult situations." />
             <marker date="1499383977576" expanded="true" signature="3341:3364" ph="View details &gt;&gt;" />
+            <marker date="1499383977576" expanded="true" signature="3832:4057" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="4396:4621" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="4948:5173" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="5312:5441" ph="..." />
+            <marker date="1499383977576" expanded="true" signature="5480:5558" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/common/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contact/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1498438116660" expanded="true" signature="409:424" ph="We value your feedback" />
+            <marker date="1498438116660" expanded="true" signature="483:497" ph="Please let us know what you think" />
+            <marker date="1498438116660" expanded="true" signature="864:874" ph="Email" />
+            <marker date="1498438116660" expanded="true" signature="1144:1158" ph="First Name" />
+            <marker date="1498438116660" expanded="true" signature="1434:1447" ph="Last Name" />
+            <marker date="1498438116660" expanded="true" signature="1721:1747" ph="Your Feedback" />
+            <marker date="1498438116660" expanded="true" signature="2036:2047" ph="Submit" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/formValidation.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

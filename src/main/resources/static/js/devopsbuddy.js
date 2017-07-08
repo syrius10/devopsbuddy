@@ -12,4 +12,106 @@ function main() {
         $collapse.collapse('toggle');
     });
 
+    /* Contact form validation */
+    $('#contatForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            firstName: {
+                validators: {
+                    notEmpty: {
+                        message: 'The first name is required'
+                    }
+                }
+            },
+            lastName: {
+                validators: {
+                    notEmpty: {
+                        message: 'The last name is required'
+                    }
+                }
+            },
+            feedback: {
+                validators: {
+                    notEmpty: {
+                        message: 'Your feedback is valued and required'
+                    }
+                }
+            }
+        }
+    });
+
+    $('#savePasswordForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'The password is required'
+                    },
+                    identical: {
+                        field: 'confirmPassword',
+                        message: 'The password and its confirmation are not the same'
+                    }
+                }
+            },
+            confirmPassword: {
+                validators: {
+                    notEmpty: {
+                        message: 'The confirmation password is required'
+                    },
+                    identical: {
+                        field: 'password',
+                        message: 'The password and its confirmation are not the same'
+                    }
+                }
+            }
+        }
+    });
+
+    /* Login page form validation */
+    $('#loginForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                validators: {
+                    notEmpty: {
+                        message: 'The username is required'
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'The password is required'
+                    }
+                }
+            }
+        }
+    });
+
 }
