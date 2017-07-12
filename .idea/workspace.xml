@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="028a23b1-8475-4f46-adbe-0eb1fbfbc825" name="Default" comment="Added files to .gitignore">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/PlanService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/DevopsbuddyApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/DevopsbuddyApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/SignupController.java" afterPath="$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/SignupController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" afterPath="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/registration/signup.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration/signup.html" />
     </list>
     <ignored path="devopsbuddy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,41 +28,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java">
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="79" column="79" selection-start-line="79" selection-start-column="79" selection-end-line="79" selection-end-column="79" />
+            <state relative-caret-position="201">
+              <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="64" />
               <folding>
-                <element signature="e#2252#2253#0" expanded="true" />
-                <element signature="e#2314#2315#0" expanded="true" />
-                <element signature="e#2598#2599#0" expanded="true" />
-                <element signature="e#2654#2655#0" expanded="true" />
+                <marker date="1499879808717" expanded="true" signature="685:715" ph="Thank You. Your profile has been created." />
+                <marker date="1499879808717" expanded="true" signature="1292:1315" ph="Sign Up for a Basic Account" />
+                <marker date="1499879808717" expanded="true" signature="1416:1437" ph="Sign Up for a Pro Account" />
+                <marker date="1499879808717" expanded="true" signature="2279:2320" ph="Username (already taken)" />
+                <marker date="1499879808717" expanded="true" signature="2646:2666" ph="Choose your username" />
+                <marker date="1499879808717" expanded="true" signature="3040:3078" ph="Email (already taken)" />
+                <marker date="1499879808717" expanded="true" signature="3358:3368" ph="Email" />
+                <marker date="1499879808717" expanded="true" signature="3643:3663" ph="Password" />
+                <marker date="1499879808717" expanded="true" signature="3919:3947" ph="Confirm Password" />
+                <marker date="1499879808717" expanded="true" signature="4211:4225" ph="First Name" />
+                <marker date="1499879808717" expanded="true" signature="4472:4485" ph="Last Name" />
+                <marker date="1499879808717" expanded="true" signature="4733:4756" ph="A bit about yourself" />
+                <marker date="1499879808717" expanded="true" signature="5307:5326" ph="Country" />
+                <marker date="1499879808717" expanded="true" signature="6923:6946" ph="Phone Number" />
+                <marker date="1499879808717" expanded="true" signature="7223:7234" ph="Submit" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlanService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/PlanService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DevopsbuddyApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/DevopsbuddyApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -71,8 +57,8 @@
       <file leaf-file-name="SignupController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/SignupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
+            <state relative-caret-position="219">
+              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,11 +139,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/registration/signup.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/backend/service/PlanService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/DevopsbuddyApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/registration/signup.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/SignupController.java" />
       </list>
     </option>
@@ -1814,7 +1800,7 @@
       <workItem from="1497869991494" duration="22000" />
       <workItem from="1498513388433" duration="5589000" />
       <workItem from="1498683820555" duration="50449000" />
-      <workItem from="1499280155464" duration="39480000" />
+      <workItem from="1499280155464" duration="40843000" />
     </task>
     <task id="LOCAL-00001" summary="Added files to .gitignore">
       <created>1496184698119</created>
@@ -1866,11 +1852,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112277000" />
+    <option name="totallyTimeSpent" value="113640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1880,10 +1866,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26350245" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26350245" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24281392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2441,38 +2427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2516">
-          <caret line="148" column="7" selection-start-line="148" selection-start-column="7" selection-end-line="148" selection-end-column="7" />
-          <folding>
-            <marker date="1499718503298" expanded="true" signature="685:715" ph="Thank You. Your profile has been created." />
-            <marker date="1499718503298" expanded="true" signature="1292:1315" ph="Sign Up for a Basic Account" />
-            <marker date="1499718503298" expanded="true" signature="1416:1437" ph="Sign Up for a Pro Account" />
-            <marker date="1499718503298" expanded="true" signature="2279:2320" ph="Username (already taken)" />
-            <marker date="1499718503298" expanded="true" signature="2646:2666" ph="Choose your username" />
-            <marker date="1499718503298" expanded="true" signature="3040:3078" ph="Email (already taken)" />
-            <marker date="1499718503298" expanded="true" signature="3358:3368" ph="Email" />
-            <marker date="1499718503298" expanded="true" signature="3643:3663" ph="Password" />
-            <marker date="1499718503298" expanded="true" signature="3919:3947" ph="Confirm Password" />
-            <marker date="1499718503298" expanded="true" signature="4211:4225" ph="First Name" />
-            <marker date="1499718503298" expanded="true" signature="4472:4485" ph="Last Name" />
-            <marker date="1499718503298" expanded="true" signature="4733:4756" ph="A bit about yourself" />
-            <marker date="1499718503298" expanded="true" signature="5052:5071" ph="Country" />
-            <marker date="1499718503298" expanded="true" signature="6668:6691" ph="Phone Number" />
-            <marker date="1499718503298" expanded="true" signature="6968:6979" ph="Submit" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/devopsbuddy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="747">
@@ -2522,10 +2476,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="64" />
+          <folding>
+            <marker date="1499879808717" expanded="true" signature="685:715" ph="Thank You. Your profile has been created." />
+            <marker date="1499879808717" expanded="true" signature="1292:1315" ph="Sign Up for a Basic Account" />
+            <marker date="1499879808717" expanded="true" signature="1416:1437" ph="Sign Up for a Pro Account" />
+            <marker date="1499879808717" expanded="true" signature="2279:2320" ph="Username (already taken)" />
+            <marker date="1499879808717" expanded="true" signature="2646:2666" ph="Choose your username" />
+            <marker date="1499879808717" expanded="true" signature="3040:3078" ph="Email (already taken)" />
+            <marker date="1499879808717" expanded="true" signature="3358:3368" ph="Email" />
+            <marker date="1499879808717" expanded="true" signature="3643:3663" ph="Password" />
+            <marker date="1499879808717" expanded="true" signature="3919:3947" ph="Confirm Password" />
+            <marker date="1499879808717" expanded="true" signature="4211:4225" ph="First Name" />
+            <marker date="1499879808717" expanded="true" signature="4472:4485" ph="Last Name" />
+            <marker date="1499879808717" expanded="true" signature="4733:4756" ph="A bit about yourself" />
+            <marker date="1499879808717" expanded="true" signature="5307:5326" ph="Country" />
+            <marker date="1499879808717" expanded="true" signature="6923:6946" ph="Phone Number" />
+            <marker date="1499879808717" expanded="true" signature="7223:7234" ph="Submit" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/devopsbuddy/web/controllers/SignupController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="163" column="1" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
+        <state relative-caret-position="219">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
