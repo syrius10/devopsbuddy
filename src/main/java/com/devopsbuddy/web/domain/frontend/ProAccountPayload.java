@@ -8,11 +8,8 @@ package com.devopsbuddy.web.domain.frontend;
 public class ProAccountPayload extends BasicAccountPayload {
 
     private String cardNumber;
-
     private String cardCode;
-
     private String cardMonth;
-
     private String cardYear;
 
     public String getCardNumber() {
@@ -46,7 +43,4 @@ public class ProAccountPayload extends BasicAccountPayload {
     public void setCardYear(String cardYear) {
         this.cardYear = cardYear;
     }
-
-
-
 }

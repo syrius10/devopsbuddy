@@ -14,13 +14,15 @@ public class UserUtils {
     /**
      * Non instantiable.
      */
-    private UserUtils() { throw new AssertionError("Non instantiable"); }
+    private UserUtils() {
+        throw new AssertionError("Non instantiable");
+    }
 
     /**
      * Creates a user with basic attributes set.
-     * @param username The username
-     * @param email The email
-     * @return A user entity.
+     * @param username The username.
+     * @param email The email.
+     * @return A User entity
      */
     public static User createBasicUser(String username, String email) {
 
@@ -37,18 +39,16 @@ public class UserUtils {
         user.setProfileImageUrl("https://blabla.images.com/basicuser");
 
         return user;
-
     }
 
     /**
      * Builds and returns the URL to reset the user password.
      * @param request The Http Servlet Request
      * @param userId The user id
-     * @param token The toke
+     * @param token The token
      * @return the URL to reset the user password.
      */
     public static String createPasswordResetUrl(HttpServletRequest request, long userId, String token) {
-
         String passwordResetUrl =
                 request.getScheme() +
                         "://" +
@@ -63,7 +63,6 @@ public class UserUtils {
                         token;
 
         return passwordResetUrl;
-
     }
 
     public static <T extends BasicAccountPayload> User fromWebUserToDomainUser(T frontendPayload) {

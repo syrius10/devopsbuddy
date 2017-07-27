@@ -14,13 +14,13 @@ import java.time.LocalDateTime;
 @Entity
 public class PasswordResetToken implements Serializable {
 
-    /**The serial version UID for Serializable classes. */
+    /** The Serial Version UID for Serializable classes. */
     private static final long serialVersionUID = 1L;
 
     /** The application logger */
     private static final Logger LOG = LoggerFactory.getLogger(PasswordResetToken.class);
 
-    private static final int DEFAULT_TOKEN_LENGTH_IN_MINUTES = 120;
+    private final static int DEFAULT_TOKEN_LENGTH_IN_MINUTES = 120;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -41,12 +41,13 @@ public class PasswordResetToken implements Serializable {
      * Default constructor.
      */
     public PasswordResetToken() {
+
     }
 
     /**
      * Full constructor.
      * @param token The user token. It must not be null.
-     * @param user The user for which the token should be created. It must not be null.
+     * @param user The user for which the token should be created It must not be null.
      * @param creationDateTime The date time when this request was created. It must not be null.
      * @param expirationInMinutes The length, in minutes, for which this token will be valid. If zero, it will be
      *                            assigned a default value of 120 (2 hours)

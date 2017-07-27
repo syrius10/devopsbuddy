@@ -30,8 +30,6 @@ public abstract class AbstractIntegrationTest {
     @Autowired
     protected UserRepository userRepository;
 
-    //--------------> Protected methods
-
     protected Plan createPlan(PlansEnum plansEnum) {
         return new Plan(plansEnum);
     }
@@ -62,5 +60,4 @@ public abstract class AbstractIntegrationTest {
     protected User createUser(TestName testName) {
         return createUser(testName.getMethodName(), testName.getMethodName() + "@devopsbuddy.com");
     }
-
 }

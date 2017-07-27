@@ -27,7 +27,7 @@ public class StripeService {
      * Creates a Stripe customer and returns the Stripe customer id
      * @param tokenParams The credit card details to obtain a token. These will never be stored in the DB
      * @param customerParams The parameters which identify the customer
-     * @return The Stripe customer id which can then be used to perform billing operations at a later stage
+     * @return The stripe customer id which can then be used to perform billing operations at a later stage
      * @throws com.devopsbuddy.exceptions.StripeException If an error occurred while interacting with Stripe
      */
     public String createCustomer(Map<String, Object> tokenParams, Map<String, Object> customerParams) {
@@ -35,7 +35,6 @@ public class StripeService {
         Stripe.apiKey = stripeKey;
 
         String stripeCustomerId = null;
-
         try {
             Token token = Token.create(tokenParams);
             customerParams.put("source", token.getId());
@@ -59,5 +58,4 @@ public class StripeService {
         }
         return stripeCustomerId;
     }
-
 }

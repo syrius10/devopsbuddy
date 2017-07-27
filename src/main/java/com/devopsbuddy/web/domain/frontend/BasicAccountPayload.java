@@ -12,7 +12,7 @@ import java.io.Serializable;
  */
 public class BasicAccountPayload implements Serializable {
 
-    /**The serial version UID for Serializable classes. */
+    /** The Serial Version UID for Serializable classes. */
     private static final long serialVersionUID = 1L;
 
     @NotNull
@@ -145,6 +145,4 @@ public class BasicAccountPayload implements Serializable {
         sb.append('}');
         return sb.toString();
     }
-
-
 }

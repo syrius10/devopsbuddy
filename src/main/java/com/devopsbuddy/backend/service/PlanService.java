@@ -18,9 +18,9 @@ public class PlanService {
     private PlanRepository planRepository;
 
     /**
-     * Returns the plan id for the given if or null if it couldn't find one.
+     * Returns the plan id for the given id or null if it couldn't find one.
      * @param planId The plan id
-     * @return The plan id for the given if or null if it couldn't find one.
+     * @return The plan id for the given id or null if it couldn't find one.
      */
     public Plan findPlanById(int planId) {
         return planRepository.findOne(planId);
@@ -45,7 +45,5 @@ public class PlanService {
         }
 
         return plan;
-
     }
-
 }

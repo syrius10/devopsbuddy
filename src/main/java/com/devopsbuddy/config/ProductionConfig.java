@@ -28,5 +28,4 @@ public class ProductionConfig {
     public String stripeKey() {
         return stripeProdKey;
     }
-
 }

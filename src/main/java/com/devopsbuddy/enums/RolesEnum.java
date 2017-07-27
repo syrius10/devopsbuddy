@@ -10,6 +10,7 @@ public enum RolesEnum {
     PRO(2, "ROLE_PRO"),
     ADMIN(3, "ROLE_ADMIN");
 
+
     private final int id;
 
     private final String roleName;
@@ -19,8 +20,11 @@ public enum RolesEnum {
         this.roleName = roleName;
     }
 
-    public int getId() { return id; }
+    public int getId() {
+        return id;
+    }
 
-    public String getRoleName() { return roleName; }
-
+    public String getRoleName() {
+        return roleName;
+    }
 }

@@ -35,13 +35,6 @@ public class PasswordResetTokenService {
     private static final Logger LOG = LoggerFactory.getLogger(PasswordResetTokenService.class);
 
     /**
-     * Retrieves a Password Reset Token for the given token id.
-     * @param token The token to be returned
-     * @return A Password Reset Token if one was found or null if none was found.
-     */
-    public PasswordResetToken findByToken(String token) { return passwordResetTokenRepository.findByToken(token); }
-
-    /**
      * Creates a new Password Reset Token for the user identified by the given email.
      * @param email The email uniquely identifying the user
      * @return a new Password Reset Token for the user identified by the given email or null if none was found
@@ -59,13 +52,24 @@ public class PasswordResetTokenService {
             passwordResetToken = new PasswordResetToken(token, user, now, tokenExpirationInMinutes);
 
             passwordResetToken = passwordResetTokenRepository.save(passwordResetToken);
-            LOG.debug("Successfully created token {} for user {}", token, user.getUsername());
+            LOG.debug("Successfully created token {}  for user {}", token, user.getUsername());
         } else {
-            LOG.warn("We couldn't find an user for the given email {}", email);
+            LOG.warn("We couldn't find a user for the given email {}", email);
         }
 
         return passwordResetToken;
 
     }
+
+    /**
+     * Retrieves a Password Reset Token for the given token id.
+     * @param token The token to be returned
+     * @return A Password Reset Token if one was found or null if none was found.
+     */
+    public PasswordResetToken findByToken(String token) {
+        return passwordResetTokenRepository.findByToken(token);
+    }
+
+
 
 }

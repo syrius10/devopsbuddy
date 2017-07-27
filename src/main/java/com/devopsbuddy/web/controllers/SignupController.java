@@ -40,7 +40,7 @@ import java.util.*;
  * Created by Syrius on 7/9/2017.
  */
 @Controller
-public class SignupController {
+public class    SignupController {
 
     @Autowired
     private PlanService planService;
@@ -71,10 +71,10 @@ public class SignupController {
 
     public static final String ERROR_MESSAGE_KEY = "message";
 
-    private static final String GENERIC_ERROR_VIEW_NAME = "error/genericError";
+    public static final String GENERIC_ERROR_VIEW_NAME = "error/genericError";
 
     @RequestMapping(value = SIGNUP_URL_MAPPING, method = RequestMethod.GET)
-    public String signUpGet(@RequestParam("planId") int planId, ModelMap model) {
+    public String signupGet(@RequestParam("planId") int planId, ModelMap model) {
 
         if (planId != PlansEnum.BASIC.getId() && planId != PlansEnum.PRO.getId()) {
             throw new IllegalArgumentException("Plan id is not valid");
@@ -105,14 +105,14 @@ public class SignupController {
         if (model.containsKey(DUPLICATED_USERNAME_KEY)) {
             LOG.warn("The username already exists. Displaying error to the user");
             model.addAttribute(SIGNED_UP_MESSAGE_KEY, "false");
-            errorMessages.add("Username already exists");
+            errorMessages.add("Username already exist");
             duplicates = true;
         }
 
         if (model.containsKey(DUPLICATED_EMAIL_KEY)) {
             LOG.warn("The email already exists. Displaying error to the user");
             model.addAttribute(SIGNED_UP_MESSAGE_KEY, "false");
-            errorMessages.add("Email already exists");
+            errorMessages.add("Email already exist");
             duplicates = true;
         }
 
@@ -121,7 +121,9 @@ public class SignupController {
             return SUBSCRIPTION_VIEW_NAME;
         }
 
-        // There are certain info that the user doesn't set, such as profile image URL, Stripe customer id, plans and roles
+
+        // There are certain info that the user doesn't set, such as profile image URL, Stripe customer id,
+        // plans and roles
         LOG.debug("Transforming user payload into User domain object");
         User user = UserUtils.fromWebUserToDomainUser(payload);
 
@@ -132,8 +134,8 @@ public class SignupController {
             if (profileImageUrl != null) {
                 user.setProfileImageUrl(profileImageUrl);
             } else {
-                LOG.warn("There was a problem uploading the profile image S3. The user's profile will " +
-                        " be created without an image");
+                LOG.warn("There was a problem uploading the profile image to S3. The user's profile will" +
+                        " be created without the image");
             }
 
         }
@@ -151,7 +153,7 @@ public class SignupController {
 
         User registeredUser = null;
 
-        //By default users get the BASIC ROLE
+        // By default users get the BASIC ROLE
         Set<UserRole> roles = new HashSet<>();
         if (planId == PlansEnum.BASIC.getId()) {
             roles.add(new UserRole(user, new Role(RolesEnum.BASIC)));
@@ -166,14 +168,16 @@ public class SignupController {
                     StringUtils.isEmpty(payload.getCardYear())) {
                 LOG.error("One or more credit card fields is null or empty. Returning error to the user");
                 model.addAttribute(SIGNED_UP_MESSAGE_KEY, "false");
-                model.addAttribute(ERROR_MESSAGE_KEY, "One of more credit card details is null or empty");
+                model.addAttribute(ERROR_MESSAGE_KEY, "One of more credit card details is null or empty.");
                 return SUBSCRIPTION_VIEW_NAME;
+
             }
 
-            // If the user has selected the pro account, creates the Stripe customer to store the Stripe customer id in the db
+            // If the user has selected the pro account, creates the Stripe customer to store the stripe customer id in
+            // the db
             Map<String, Object> stripeTokenParams = StripeUtils.extractTokenParamsFromSignupPayload(payload);
 
-            Map<String, Object> customerParams = new HashMap<>();
+            Map<String, Object> customerParams = new HashMap<String, Object>();
             customerParams.put("description", "DevOps Buddy customer. Username: " + payload.getUsername());
             customerParams.put("email", payload.getEmail());
             customerParams.put("plan", selectedPlan.getId());
@@ -187,8 +191,10 @@ public class SignupController {
             LOG.debug(payload.toString());
         }
 
+
         // Auto logins the registered user
-        Authentication auth = new UsernamePasswordAuthenticationToken(registeredUser, null, registeredUser.getAuthorities());
+        Authentication auth = new UsernamePasswordAuthenticationToken(
+                registeredUser, null, registeredUser.getAuthorities());
         SecurityContextHolder.getContext().setAuthentication(auth);
 
         LOG.info("User created successfully");
@@ -196,7 +202,6 @@ public class SignupController {
         model.addAttribute(SIGNED_UP_MESSAGE_KEY, "true");
 
         return SUBSCRIPTION_VIEW_NAME;
-
     }
 
     @ExceptionHandler({StripeException.class, S3Exception.class})
@@ -210,14 +215,18 @@ public class SignupController {
         mav.addObject("timestamp", LocalDate.now(Clock.systemUTC()));
         mav.setViewName(GENERIC_ERROR_VIEW_NAME);
         return mav;
-
     }
 
-    //----------------> Private methods
 
+    //--------------> Private methods
+
+    /**
+     * Checks if the username/email are duplicates and sets error flags in the model.
+     * Side effect: the method might set attributes on Model
+     **/
     private void checkForDuplicates(BasicAccountPayload payload, ModelMap model) {
 
-        //Username
+        // Username
         if (userService.findByUserName(payload.getUsername()) != null) {
             model.addAttribute(DUPLICATED_USERNAME_KEY, true);
         }
@@ -226,5 +235,4 @@ public class SignupController {
         }
 
     }
-
 }

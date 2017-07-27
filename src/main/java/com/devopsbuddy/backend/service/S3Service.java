@@ -43,19 +43,19 @@ public class S3Service {
     @Autowired
     private AmazonS3Client s3Client;
 
+
     /**
      * It stores the given file name in S3 and returns the key under which the file has been stored
-     * @param uploadedFile The multipart file uploaded by the user
+     * @param uploadedFile The multipart file uploaed by the user
      * @param username The username for which to upload this file
-     * @return The URL of the uploaded page
+     * @return The URL of the uploaded image
      * @throws S3Exception If something goes wrong
      */
-    public String storeProfileImage(MultipartFile uploadedFile, String username) {
+    public String storeProfileImage(MultipartFile uploadedFile, String username)  {
 
         String profileImageUrl = null;
 
         try {
-
             if (uploadedFile != null && !uploadedFile.isEmpty()) {
                 byte[] bytes = uploadedFile.getBytes();
 
@@ -75,17 +75,16 @@ public class S3Service {
 
                 LOG.info("Temporary file will be saved to {}", tmpProfileImageFile.getAbsolutePath());
 
-                try (BufferedOutputStream stream =
-                             new BufferedOutputStream(
-                                     new FileOutputStream(new File(tmpProfileImageFile.getAbsolutePath())))) {
+                try(BufferedOutputStream stream =
+                            new BufferedOutputStream(
+                                    new FileOutputStream(new File(tmpProfileImageFile.getAbsolutePath())))) {
                     stream.write(bytes);
                 }
 
                 profileImageUrl = this.storeProfileImageToS3(tmpProfileImageFile, username);
 
-                //Clean up the temporary folder
+                // Clean up the temporary folder
                 tmpProfileImageFile.delete();
-
             }
         } catch (IOException e) {
             throw new S3Exception(e);
@@ -95,7 +94,7 @@ public class S3Service {
 
     }
 
-    //-----------------> Private methods
+    //--------------> Private methods
 
     /**
      * Returns the root URL where the bucket name is located.
@@ -110,7 +109,7 @@ public class S3Service {
 
         try {
             if (!s3Client.doesBucketExist(bucketName)) {
-                LOG.info("Bucket {} doesn't exist...Creating one");
+                LOG.info("Bucket {} doesn't exists...Creating one");
                 s3Client.createBucket(bucketName);
                 LOG.info("Created bucket: {}", bucketName);
             }
@@ -121,14 +120,13 @@ public class S3Service {
             throw new S3Exception(ace);
         }
 
-        return bucketUrl;
 
+        return bucketUrl;
     }
 
     /**
      * It stores the given file name in S3 and returns the key under which the file has been stored
      * @param resource The file resource to upload to S3
-     * @param username The username for which to upload this file
      * @return The URL of the uploaded resource or null if a problem occurred
      *
      * @throws S3Exception If the resource file does not exist
@@ -145,9 +143,12 @@ public class S3Service {
         String rootBucketUrl = this.ensureBucketExists(bucketName);
 
         if (null == rootBucketUrl) {
+
             LOG.error("The bucket {} does not exist and the application " +
                     "was not able to create it. The image won't be stored with the profile", rootBucketUrl);
+
         } else {
+
             AccessControlList acl = new AccessControlList();
             acl.grantPermission(GroupGrantee.AllUsers, Permission.Read);
 
@@ -166,5 +167,4 @@ public class S3Service {
         return resourceUrl;
 
     }
-
 }

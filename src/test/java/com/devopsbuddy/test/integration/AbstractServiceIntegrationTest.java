@@ -16,7 +16,7 @@ import java.util.Set;
 /**
  * Created by Syrius on 7/4/2017.
  */
-public abstract class AbstractServiceIntegrationTest  {
+public abstract class AbstractServiceIntegrationTest {
     @Autowired
     protected UserService userService;
 

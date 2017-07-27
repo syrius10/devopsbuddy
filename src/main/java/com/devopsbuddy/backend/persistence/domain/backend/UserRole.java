@@ -10,10 +10,11 @@ import java.io.Serializable;
 @Table(name = "user_role")
 public class UserRole implements Serializable {
 
-    /**The serial version UID for Serializable classes. */
+    /** The Serial Version UID for Serializable classes. */
     private static final long serialVersionUID = 1L;
 
     public UserRole() {
+
     }
 
     @Id
@@ -25,9 +26,11 @@ public class UserRole implements Serializable {
         this.role = role;
     }
 
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User user;
+
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "role_id")

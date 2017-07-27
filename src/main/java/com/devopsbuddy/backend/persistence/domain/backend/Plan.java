@@ -12,7 +12,7 @@ import java.io.Serializable;
 @Entity
 public class Plan implements Serializable {
 
-    /**The serial version UID for Serializable classes. */
+    /** The Serial Version UID for Serializable classes. */
     private static final long serialVersionUID = 1L;
 
     @Id

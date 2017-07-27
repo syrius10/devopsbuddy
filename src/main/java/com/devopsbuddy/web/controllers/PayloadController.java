@@ -15,5 +15,4 @@ public class PayloadController {
     public String payload() {
         return PAYLOAD_VIEW_NAME;
     }
-
 }

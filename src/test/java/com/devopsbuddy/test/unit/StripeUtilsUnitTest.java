@@ -36,7 +36,5 @@ public class StripeUtilsUnitTest {
         assertThat(cardMonth, is(String.valueOf(cardParams.get(StripeUtils.STRIPE_EXPIRY_MONTH_KEY))));
         assertThat(cardYear, is(String.valueOf(cardParams.get(StripeUtils.STRIPE_EXPIRY_YEAR_KEY))));
         assertThat(cardCode, is(cardParams.get(StripeUtils.STRIPE_CVC_KEY)));
-
     }
-
 }

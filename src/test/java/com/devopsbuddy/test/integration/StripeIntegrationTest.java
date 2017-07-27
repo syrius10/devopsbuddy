@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.time.Clock;
@@ -29,10 +29,10 @@ import static org.hamcrest.core.IsNull.notNullValue;
  * Created by Syrius on 7/15/2017.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringBootTest(classes = DevopsbuddyApplication.class)
+@SpringApplicationConfiguration(classes = DevopsbuddyApplication.class)
 public class StripeIntegrationTest {
 
-    /** The application logger */
+    /** The application logger. */
     private static final Logger LOG = LoggerFactory.getLogger(StripeIntegrationTest.class);
 
     public static final String TEST_CC_NUMBER = "4242424242424242";
@@ -56,15 +56,15 @@ public class StripeIntegrationTest {
     @Test
     public void createStripeCustomer() throws Exception {
 
-        Map<String, Object> tokenParams = new HashMap<>();
-        Map<String, Object> cardParams = new HashMap<>();
+        Map<String, Object> tokenParams = new HashMap<String, Object>();
+        Map<String, Object> cardParams = new HashMap<String, Object>();
         cardParams.put(StripeUtils.STRIPE_CARD_NUMBER_KEY, TEST_CC_NUMBER);
         cardParams.put(StripeUtils.STRIPE_EXPIRY_MONTH_KEY, TEST_CC_EXP_MONTH);
         cardParams.put(StripeUtils.STRIPE_EXPIRY_YEAR_KEY, LocalDate.now(Clock.systemUTC()).getYear() + 1);
         cardParams.put(StripeUtils.STRIPE_CVC_KEY, TEST_CC_CVC_NBR);
         tokenParams.put(StripeUtils.STRIPE_CARD_KEY, cardParams);
 
-        Map<String, Object> customerParams = new HashMap<>();
+        Map<String, Object> customerParams = new HashMap<String, Object>();
         customerParams.put("description", "Customer for test@example.com");
         customerParams.put("plan", PlansEnum.PRO.getId());
 
@@ -75,5 +75,4 @@ public class StripeIntegrationTest {
         cu.delete();
 
     }
-
 }

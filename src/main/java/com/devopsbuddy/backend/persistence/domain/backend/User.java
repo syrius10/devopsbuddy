@@ -16,10 +16,12 @@ import java.util.Set;
 @Entity
 public class User implements Serializable, UserDetails {
 
-    /**The serial version UID for Serializable classes. */
+    /** The Serial Version UID for Serializable classes. */
     private static final long serialVersionUID = 1L;
 
+
     public User() {
+
     }
 
     @Id
@@ -60,6 +62,8 @@ public class User implements Serializable, UserDetails {
     @JoinColumn(name = "plan_id")
     private Plan plan;
 
+
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<UserRole> userRoles = new HashSet<>();
 
@@ -90,16 +94,10 @@ public class User implements Serializable, UserDetails {
         return username;
     }
 
+
+
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getEmail() {
@@ -174,23 +172,6 @@ public class User implements Serializable, UserDetails {
         this.enabled = enabled;
     }
 
-    public Plan getPlan() {
-        return plan;
-    }
-
-    public void setPlan(Plan plan) {
-        this.plan = plan;
-    }
-
-    public Set<UserRole> getUserRoles() {
-        return userRoles;
-    }
-
-    public void setUserRoles(Set<UserRole> userRoles) {
-        this.userRoles = userRoles;
-    }
-
-
     @Override
     public boolean isAccountNonExpired() {
         return true;
@@ -213,6 +194,32 @@ public class User implements Serializable, UserDetails {
         return authorities;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Plan getPlan() {
+        return plan;
+    }
+
+    public void setPlan(Plan plan) {
+        this.plan = plan;
+    }
+
+    public Set<UserRole> getUserRoles() {
+        return userRoles;
+    }
+
+    public void setUserRoles(Set<UserRole> userRoles) {
+        this.userRoles = userRoles;
+    }
+
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -228,4 +235,6 @@ public class User implements Serializable, UserDetails {
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
     }
+
+
 }

@@ -14,7 +14,7 @@ import java.util.Locale;
  */
 @Service
 public class I18NService {
-    
+
     /** The application logger */
     private static final Logger LOG = LoggerFactory.getLogger(I18NService.class);
 
@@ -32,9 +32,9 @@ public class I18NService {
     }
 
     /**
-     * Returns a message for the given message id and locale
+     * Returns a messsage for the given message id and locale
      * @param messageId The key to the messages resource file
-     * @param locale The locale
+     * @param locale The Locale
      **/
     public String getMessage(String messageId, Locale locale) {
         return messageSource.getMessage(messageId, null, locale);

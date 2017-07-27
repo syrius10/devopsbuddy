@@ -13,7 +13,7 @@ import java.util.Set;
 @Entity
 public class Role implements Serializable {
 
-    /**The serial version UID for Serializable classes. */
+    /** The Serial Version UID for Serializable classes. */
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -25,6 +25,7 @@ public class Role implements Serializable {
     private Set<UserRole> userRoles = new HashSet<>();
 
     public Role() {
+
     }
 
     /**

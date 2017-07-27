@@ -67,5 +67,4 @@ public class UserUtilsUnitTest {
         Assert.assertEquals(webUser.getDescription(), user.getDescription());
 
     }
-
 }
